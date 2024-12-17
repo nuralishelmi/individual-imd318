@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Friends - MyChronicle</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white; 
+            color: #4e3629; 
+            line-height: 1;
+        }
+
+        header {
+            background-color: white; 
+            color: #4e3629; 
+            text-align: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo-container img {
+            width: 100px; 
+            height: auto;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: lowercase; 
+            letter-spacing: 1px;
+            font-family: 'Georgia', serif; 
+            color: #4e3629; 
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 1.5rem;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4e3629; 
+            font-size: 1.1rem;
+            text-transform: capitalize; 
+        }
+
+        nav ul li a:hover {
+            border-bottom: 2px solid #4e3629; 
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #4e3629; 
+            margin: 3rem 0;
+        }
+
+        .friends-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 3rem;
+        }
+
+        .friend-card {
+            background-color: white; 
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .friend-card img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .friend-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .friend-card .content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .friend-card h3 {
+            font-size: 1.8rem;
+            color: #4e3629; 
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .friend-card p {
+            color: #4e3629; 
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .friend-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background-color: white; 
+            color: #4e3629; 
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #4e3629; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 2rem 0;
+            }
+            .friends-container {
+                padding: 2rem;
+            }
+        }
+
+        .song-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .song-section audio {
+            width: 300px; 
+            margin: 1rem auto; 
+            border-radius: 8px; 
+            background-color: #f7f7f7; 
+            padding: 5px; 
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo-container">
+            <img src="images/logo2.png" alt="Logo"> 
+        </div>
+        <div class="logo">chronicleshe</div> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meetme.html">Meet Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section class="friends-section">
+        <h2 class="section-title">The Real Ones</h2>
+
+               <section class="song-section">
+            <h2 class=</h2>
+            <audio controls>
+                <source src="audio/song1.mp3" type="audio/mp3">
+            </audio>
+        </section>
+
+        <div class="friends-container">
+            <div class="friend-card">
+                <img src="images/friend15.jpg" alt="Friend 1">
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend11.jpg" alt="Friend 2">
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend3.jpg" alt="Friend 3">
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend10.jpg" alt="Friend 4">
+            </div>
+            
+            <div class="friend-card">
+                <img src="images/friend5.jpg" alt="Friend 5">
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend14.jpg" alt="Friend 6">
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend7.jpg" alt="Friend 7">
+            </div>
+
+            <div class="friend-card">
+                <video controls width="100%">
+                    <source src="video/friend18.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend4.jpg" alt="Friend 9">
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend9.jpg" alt="Friend 10">
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend2.jpg" alt="Friend 11">
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend12.jpg" alt="Friend 12">
+            </div>
+
+            <div class="friend-card">
+                <video controls width="100%">
+                    <source src="video/friend17.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend16.jpg" alt="Friend 14">
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend1.jpg" alt="Friend 15">
+            </div>
+
+            <div class="friend-card">
+                <img src="images/friend17.jpg" alt="Friend 16">
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 chronicleshe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
