@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family - MyChronicle</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #4e3629;
+            background-color: #ffffff;
+        }
+
+        .marquee {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 1rem 0;
+            width: 200%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .marquee h1 {
+            margin: 2;
+            font-size: 1rem;
+            color: #4e3629;
+        }
+
+        header {
+            background-color: white;
+            color: #4e3629;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: auto;
+            padding: 0.5rem;
+        }
+
+        .logo {
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: lowercase;
+            letter-spacing: 5px;
+            font-family: 'Georgia', serif;
+            color: #4e3629;
+            margin-top: 1rem;
+        }
+
+        nav {
+            margin-top: 10rem;
+            padding: 3rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4e3629;
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+
+        nav ul li a:hover {
+            color: #2c1d14;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 0rem;
+            background-color: #ffffff;
+        }
+        .hero h1 {
+            margin: 2;
+            font-size: 2.5rem;
+            font-family: Georgia, serif;
+            color: #4e3629;
+        }
+        .hero p {
+            margin: 0rem 0;
+            font-size: 1.2rem;
+            color: #4e3629;
+        }
+
+        .family-content {
+            padding: 0rem;
+            text-align: center;
+        }
+        .family-content h2 {
+            font-size: 2rem;
+            color: #4e3629;
+            font-family: Georgia, serif;
+        }
+        .family-content p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            color: #4e3629;
+        }
+
+        .family-images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5rem;
+            margin-top: 2rem;
+        }
+        .family-card {
+            width: 180px;
+            height: 180px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            margin: 0 1rem;
+        }
+        .family-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 3px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .family-card img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .family-card p {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #4e3629;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-top: 1rem;
+            color: #4e3629;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #ffffff;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #4e3629;
+        }
+
+        .family-content + .family-content {
+            margin-top: 3rem;
+        }
+
+        .song-box {
+            width: 60%;
+            margin: 0.5rem auto;
+            padding: 0.5rem;
+            background-color: transparent;
+            border: none;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .song-box audio {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .song-section {
+            margin-top: 0.5rem;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <header>
+        
+        <div class="logo-container">
+            <img src="images/logo2.png" alt="Logo" />
+        </div>
+        
+        <div class="logo">
+            <h1>chronicleshe</h1>
+        </div>
+    </header>
+
+
+    <div class="marquee">
+        <h1><marquee behavior="scroll" direction="left">Welcome to MyChronicle - It's nice to meet you!</marquee></h1>
+    </div>
+
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meetme.html">Meet Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Support System</h1>
+        <p>A support system is the strong foundation that lifts you through challenges, offering love, guidance, and strength to help you navigate life’s ups and downs.</p>
+    </section>
+
+   
+    <section class="family-content">
+        <h2 class="section-title">My Parents</h2>
+        <div class="family-images">
+            <div class="family-card">
+                <img src="images/family3.JPG" alt="Daddy" />
+            </div>
+
+            <div class="family-card">
+                <img src="images/family2.JPG" alt="Mommy" />
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="family-content">
+        <h2 class="section-title">The Heart of Home</h2>
+        <div class="family-images">
+            
+            <div class="family-card">
+                <img src="images/family7.JPG" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family12.JPG" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family4.jpg" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family9.JPG" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family8.JPG" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family14.JPG" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family11.JPG" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family6.JPG" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family10.JPG" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family13.JPG" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family17.jpg" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family16.jpg" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family15.jpg" alt="Family" />
+            </div>
+            <div class="family-card">
+                <img src="images/family18.jpg" alt="Family" />
+            </div>
+            <div class="family-card">
+                <video width="100%" height="100%" controls>
+                    <source src="video/family1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 chronicleshe. All rights reserved.
+    </footer>
+</body>
+</html>
