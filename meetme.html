@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            color: #4e3629; 
+            background-color: #ffffff; 
+            line-height: 1.6;
+        }
+
+        header {
+            width: 100%;
+            background-color: #ffffff; 
+            color: #4e3629; 
+            text-align: center;
+            padding: 0.1rem 0;
+        }
+
+        header .marquee {
+            margin-bottom: 1rem;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        header .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Georgia', serif;
+        }
+
+        .logo-container img {
+            max-width: 100px; 
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .hero {
+            position: relative;
+            height: 60vh;
+            background: url('images/picture2.jpg') center/cover no-repeat;
+            color: #4e3629; 
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #f4f4f4; 
+            font-family: 'Georgia', Serif;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #4e3629; 
+        }
+
+        .hero .button {
+            margin-top: 1.5rem;
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #4e3629; 
+            color: #ffffff; 
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ffffff; 
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4e3629; 
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #2c1d14; 
+        }
+
+        .about-me {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            grid-gap: 2rem; 
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 1rem;
+            background-color: #ffffff; 
+        }
+
+        .about-me .text {
+            flex: 1;
+        }
+
+        .about-me h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #4e3629;
+        }
+
+        .about-me p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #4e3629; 
+        }
+
+        .about-me img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .about-me img:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+
+        .social-media {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #ffffff; 
+        }
+
+        .social-media h3 {
+            font-size: 1.8rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #4e3629; 
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: #4e3629; 
+        }
+
+        .stats {
+            text-align: center;
+            padding: 2rem;
+            background-color: #ffffff; 
+        }
+
+        .stats h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #4e3629; 
+        }
+
+        .stats p {
+            font-size: 1.1rem;
+            color: #4e3629; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #ffffff; 
+            border-top: 1px solid #ddd;
+            color: #4e3629; 
+        }
+
+        .audio-player {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #f8f8f8;
+        }
+
+        .audio-player audio {
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="marquee">
+            <marquee behavior="scroll" direction="left">Welcome to MyChronicle - It's nice to meet you!</marquee>
+        </div>
+        <div class="logo-container">
+            <img src="images/logo2.png" alt="Logo">
+            <div class="logo">chronicleshe</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meetme.html">Meet Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div>
+            <h1>Nuralis Helmi</h1> 
+        </div>
+    </section>
+
+    <section class="audio-player">
+        <h3></h3>
+        <audio controls>
+            <source src="audio/song.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+ 
+    <section class="about-me">
+        <div class="text">
+            <h2>ABOUT ME</h2>
+            <p>
+               Hello! Welcome to my personal website! I'm Nuralis Helmi, 20 years old, and this is where I share a glimpse of who I am. A place to explore my passions, experiences, and the journey I’m on as I embrace new opportunities and strive for growth in every aspect of my life.
+            </p>
+            <p>
+                This site is more than just a collection of moments, it’s where I reflect on the things that inspire me and the values that drive me forward. Dive in and discover the essence of what fuels my journey!
+            </p>
+        </div>
+        <img src="images/picture7.jpg" alt="About Me">
+        <img src="images/picture9.JPG" alt="About Me">
+        <img src="images/picture8.jpg" alt="About Me">
+    </section>
+ 
+    <section class="social-media">
+        <h3>Social media is <span style="font-weight: bold;">kinda</span> my thing</h3>
+        <div class="social-icons">
+           <a href="https://www.instagram.com/alysshmy" target="_blank">Instagram</a>
+           <a href="https://www.tiktok.com/@alysshmy?_t=8sGQP2y00UE&_r=1" target="_blank">TikTok</a> 
+           <a href="https://twitter.com/alysshlm" target="_blank">Twitter</a> 
+           <a href="https://www.youtube.com/@nuralishelmi" target="_blank">YouTube</a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <h2>You are the dream you’ve been waiting for!</h2>
+        <p></p>
+    </section>
+
+    <footer>
+        &copy; 2024 chronicleshe | All Rights Reserved
+    </footer>
+</body>
+</html>
